@@ -1,0 +1,335 @@
+/* 20200417 Lesson Content */
+.lessonTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.creatTime span, .updateTime span, .producer span, .proofreader span, .view span {
+  padding-left: 12px;
+}
+/* 20200421 Linda start */
+.table_1 {
+  margin: 15px 0 30px;  
+  border: 0.8px solid #917f6f;
+  border-bottom: none;
+  grid-template-columns: 15% 35% 15% 35%;
+}
+.table_2 {
+  grid-template-columns: 10% 90%;
+  margin: 15px 0 30px;
+  border: 0.8px solid #917f6f;
+}
+.item-name {
+  justify-content: center;
+  align-items: center;
+  background-color: #746a5e;
+  color: #fff;
+  border-bottom: 0.5px solid #fffde8f5;
+}
+.item-content {
+  padding: 8px 15px;
+  border-bottom: 0.5px solid #746a5e;
+  /* line-height: 2.5rem; */
+}
+.item-content ol li {
+  list-style-type: decimal;
+  line-height: 1.5rem;
+}
+.item-content ol {
+  margin-left: 18px;
+}
+/* 20200421 Linda end */
+
+.item-content span {
+  margin-right: 8px;
+  line-height: 1.5rem;
+}
+.item-content .subjectTag {
+  border: 0.8px solid #30b49c;
+}
+.subjectTag {
+  text-align: center;
+  border-radius: 100px;
+}
+/* 20200422 Linda start */
+.textWrap {
+  padding: 10px 30px  
+}
+.text-item {
+  margin-top: 15px;
+  padding: 5px 0;
+  display: inline-block;
+  align-content: center;
+  font-size: 1.2rem;
+}
+.content {
+  padding: 10px 0;
+  line-height: 2rem;
+  /* border-bottom: 0.5px solid rgb(199, 199, 199); */
+}
+.fileVersion i {
+  margin-right: 5px;
+  font-size: 0.2rem;
+}
+/* 20200422 Linda end */
+.backToList {
+  text-align: center;
+  padding: 0 0 20px;
+}
+.backToList button {
+  padding: 8px 0;
+  min-width: 100px;
+}
+button.back {
+  background-color: #746a5e;
+  color: #fff;
+}
+button.prev, button.next {
+  background-color: #fff;
+  color: #746a5e;
+  border: 1px solid #746a5e;
+}
+button.prev i {
+  margin-right: 8px;
+}
+button.next i {
+  margin-left: 8px;
+}
+.file-area {
+  padding: 15px 25px 50px;
+  margin-top: 40px;
+  background-color: #f0f0f0;
+}
+.file-area>div {
+  padding: 15px 25px;
+}
+/* 20200423 Linda start */
+.fileDownload>label {
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.fileDownload .listRow.grid {
+  /* grid-template-columns: 40% 20% 20% 20%; */
+  grid-template-columns: 50% 25% 25%;
+  /* margin-top: 25px; */
+}
+.fileDownload .listRow>div {
+  line-height: 2.4rem;
+  padding: 0 15px;
+  border-right: 0.8px solid #c2baaf;
+  border-bottom: 0.8px solid #c2baaf;
+  text-align: center;
+}
+.fileTitle, .fileIcon, .fileTime, .count {
+  background-color: #fff;
+}
+/* 20200423 Linda end */
+.grid .fileTitle {
+  text-align-last: left;
+  color: #746a5e;
+}
+.grid .fileTitle {
+  border-left: 0.8px solid #c2baaf;
+}
+.tableHead {  
+  background-color: #c2baaf;
+  text-align: center;
+}
+.fileIcon i,.fileVersion i {
+  color: #176cd6;
+  cursor: pointer;
+}
+/* 20200421 Linda start */
+.fileIcon i:hover, .fileVersion a:hover {
+  color: #659bdd;
+}
+/* 20200421 Linda end */
+.fileVersion a {
+  color: #176cd6;
+  text-decoration-line: underline;
+}
+.fileVersion ul li {
+  list-style-type: disc;
+  margin-left: 23px;
+  line-height: 2.2rem;
+}
+.keyWords {
+  padding: 15px 0 0;
+}
+.keyWords>a {
+  margin: 0 8px;
+  cursor: pointer;
+  color: #746a5e;
+}
+.backToList button {
+  width: 30%;
+}
+
+@media only screen and (min-width: 320px) {
+  .breadCrumb {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+  .crumb-item {
+    max-width: 30%;
+  }
+  .crumb-item:last-child {
+    max-width: 65%;
+    display: inline-block;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  h1.lessonTitle {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  .main-body .d-flex {
+    flex-wrap: wrap;
+    /* font-size: .8rem; */
+    line-height: 1.5rem;
+  }
+  .log .creatTime, .log .updateTime, .log .producer, .log .proofreader, .log .view {
+    margin-right: 12px;
+  }
+  .creatTime span, .updateTime span, .producer span, .proofreader span, .view span {
+    padding-left: 5px;
+  }
+  .creatTime label, .updateTime label, .producer label, .proofreader label, .view label {
+    display: none;
+  }
+  .table_1 {
+    grid-template-columns: 25% 75%;
+    margin-bottom: 20px;
+  }
+  .table_2 {
+    grid-template-columns: 100%;
+    margin-bottom: 20px;
+  }
+  .table_2 .item-name {
+    padding: 3px 0;
+  }
+  .tag, .subjectTag {
+    display: none;
+  }
+  .subTitle {
+    font-size: 1.2rem;
+  }
+  .textWrap {
+    padding: 10px 0;
+  }
+  .backToList {
+    margin-top: 10px;
+  }
+  .backToList button {
+    padding: 3px 0;
+    width: 100%;
+  }
+  .file-area {
+    margin-top: 20px;
+    padding: 20px 0 15px;
+  }
+  .file-area>div {
+    padding: 0px;
+  }
+  .fileDownload > label {
+    margin-bottom: 15px;
+  }
+  .fileDownload .listRow.grid {
+    /* grid-template-columns: 40% 20% 20% 20%; */
+    grid-template-columns: 70% 30%;
+    margin-bottom: 25px;
+  }
+  .fileDownload .listRow>div {
+    line-height: 2rem;
+    padding: 0 5px;
+    border-right: 0.8px solid #c2baaf;
+    border-bottom: 0.8px solid #c2baaf;
+    text-align: center;
+  }
+  .tableHead:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tableHead:nth-child(2), .tableHead:nth-child(3) {
+    display: none;
+  }
+  .mix.tableHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fileTitle .fa-download {
+    margin-right: 5px;
+    color: #176cd6;
+    cursor: pointer;
+  }
+  .fileIcon, .fileTime, .count {
+    display: none;
+  }
+  .mix.td {
+    background-color: #fff;
+  }
+  .mix .fileTime {
+    display: block;
+  }
+  .fileVersion {
+    margin-bottom: 15px;
+  }
+  /* 20200428 newsContent */
+  .news.lessonTitle {
+    color: #746a5e;
+  }
+  .main-body .news.log {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .pagination {
+    justify-content: center;
+    /* left: 0; */
+  }
+}
+@media only screen and (min-width: 768px) {
+  .crumb-item {
+    font-size: 1rem;
+  }
+  .main-body .log {
+    justify-content: space-between;
+  }
+  .creatTime label, .updateTime label, .producer label, .proofreader label, .view label {
+    display: inline;
+  }
+  .fileDownload .listRow.grid {
+    /* grid-template-columns: 40% 20% 20% 20%; */
+    grid-template-columns: 70% 30%;
+    margin-bottom: 25px;
+  }
+  button.back ,button.prev, button.next {
+    width: 100px;
+  }
+  /* 20200428 newsContent start */
+  .news.lessonTitle {
+    padding: 10px 15px 0;
+  }
+  .news.log {
+    padding: 0 15px;
+  }
+  .textWrap {
+    padding: 20px 30px;
+    line-height: 1.5rem;
+  }
+  /* 20200428 newsContent end */
+  .pagination {
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .keyWords span {
+    color: #176cd6;
+    cursor: pointer;
+  }
+  .keyWords span:hover {
+    color: #5f99e0
+  }
+}

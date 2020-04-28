@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="108課綱,教案命題,素養,跨學科">
+  <meta name="description" content="">
+  
+  <title>教案命題系統-首頁</title>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".bannerWrap").slick({
+        dots:true, 
+        autoplay:true, 
+        responsive:[
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        ]
+      });
+      $(".newsWrap").slick({
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 786,
+            settings: {
+              arrows: false,
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }]
+      })
+    })
+  </script>
+
+</head>
+<body>
+  <!-- 20200419 Linda start -->
+  <div class="layer">
+    <ul class="menu-wrap">
+      <i class="fas fa-times-circle fa-2x"></i>
+      <li class="menu-item"><a class="nav-btn" href="newsList.html">最新消息</a></li>
+      <li class="menu-item"><a class="nav-btn" href="lessonList.html">教案</a></li>
+      <li class="menu-item"><a class="nav-btn" href="propositionList.html">命題</a></li>
+      <li class="menu-item"><a class="nav-btn" href="#">影音</a></li>
+      <li class="menu-item"><a class="nav-btn" href="#">關於我們</a></li>
+      <li class="menu-item"><span class="nav-btn" href="#">登入</span></li>
+    </ul>
+  </div>
+   <!-- 20200419 Linda end -->
+  <section class="header">
+    <div class="d-flex fixed-width">
+      <!-- 20200417 Linda start -->
+      <div class="logo d-flex col-4 col-m-7 col-s-10">
+        <a href="http://www.csofe.org/index/index">
+          <img src="./images/CSFES-01.png" alt="未來教育學會">
+        </a>
+        <!-- <a href="#" class="tkbLogo">
+          <img src="./images/TKBLOGO.png" alt="TKB台灣知識庫">
+        </a> -->
+      </div>
+      <nav class="menu col-m-8 col-8 flex-right">
+        <a class="nav-btn" href="newsList.html">最新消息</a>
+        <a class="nav-btn" href="lessonList.html">教案</a>
+        <a class="nav-btn" href="#">命題</a>
+        <a class="nav-btn" href="#">影音</a>
+        <a class="nav-btn" href="#">關於我們</a>
+        <span class="nav-btn" href="#">登入</span>
+      </nav>
+      <!-- 20200417 Linda end -->
+      <div class="m-mobile col-m-5 col-s-2 flex-right">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </section>
+  <section class="banner">
+    <div class="bannerWrap wrap fixed-width">
+      <div class="banner-pic">
+        <img src="./images/banner_01.jpg" alt="">
+      </div>
+      <div class="banner-pic">
+        <img src="./images/banner_02.jpg" alt="">
+      </div>
+      <div class="banner-pic">
+        <img src="./images/banner_03.jpg" alt="">
+      </div>
+      <div class="banner-pic">
+        <img src="./images/banner_04.jpg" alt="">
+      </div>
+      <div class="banner-pic">
+        <img src="./images/banner_005.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="fixed-width">
+      <div class="h2_title">
+        <h2 class="">
+          <div class="ch d-flex"><span class="bigHead">最</span><span>新消息</span>
+          </div>
+          <div class="en">HOT NEWS</div>
+        </h2>
+        <div class="line"></div>
+        <a href="newsList.html" class="more">查看更多</a>
+      </div>      
+      <div class="newsWrap">
+        <div class="newsArea">
+          <div class="banner-pic">
+            <img src="./images/newsList_0000_007.jpg" alt="">
+            <div class="label sys">系統公告</div>
+          </div>
+          <div class="newsTitle two-ellipsis">「典藏」五部曲今展開 餘百場系列活動週週不間斷</div>
+        </div>
+        <div class="newsArea">
+          <div class="banner-pic">
+            <img src="./images/newsList_0002_003.jpg" alt="">
+            <div class="label last">最新發布</div>
+          </div>
+          <div class="newsTitle two-ellipsis">「米特薩克茲風重奏團」曹麗文|國立台北藝術大學音樂系講師特別演出</div>
+        </div>
+        <div class="newsArea">
+          <div class="banner-pic">
+            <img src="./images/newsList_0001_006.jpg" alt="">
+            <div class="label sys">系統公告</div>
+          </div>
+          <div class="newsTitle two-ellipsis">「春季藝文」客家大戲-榮興客家採茶劇團</div>
+        </div>
+        <div class="newsArea">
+          <div class="banner-pic">
+            <img src="./images/newsList_0002_003.jpg" alt="">
+            <div class="label last">最新發布</div>
+          </div>
+          <div class="newsTitle two-ellipsis">「看見女孩的力量」安妮與阿嬤相遇-校園巡迴展</div>
+        </div>
+        <div class="newsArea">
+          <div class="banner-pic">
+            <img src="./images/newsList_0003_002.jpg" alt="">
+            <div class="label last">最新發布</div>
+          </div>
+          <div class="newsTitle">「形色解構」蕭雯心百號油畫展</div>
+        </div>
+        <div class="newsArea">
+          <div class="banner-pic">
+            <img src="./images/newsList_0004_001.jpg" alt="">
+            <div class="label sys">系統公告</div>
+          </div>
+          <div class="newsTitle two-ellipsis">「典藏」五部曲今展開 餘百場系列活動週週不間斷</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lessonPlan">
+    <div class="fixed-width">
+      <div class="h2_title">
+        <h2 class="">
+          <div class="ch d-flex">
+            <span class="bigHead">近</span><span>期上線</span><span class="green">教案</span>
+          </div>
+          <div class="en">NEW LESSON PLAN</div>
+        </h2>
+        <div class="line"></div>
+        <a href="lessonList.html" class="more">查看更多</a>
+      </div> 
+      <div class="stage d-flex">
+        <span class="element tab col-s-3">- 國小 -</span>
+        <span class="junior tab col-s-3">- 國中 -</span>
+        <span class="senior tab col-s-3">- 高中 -</span>
+        <span class="vocational tab col-s-3">- 高職 -</span>
+      </div>
+      <!-- 20200428 Linda start -->
+      <div class="contentWrap">
+        <div class="element tabContent">
+          <li class="d-flex flex-spaceBetween">
+            <span class="chinese tag col-1 col-s-2">國文領域</span>
+            <span class="chinese tagSimple col-s-2">國文</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">國小-了解如何蒐集資料</a>
+            </div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+          <li class="d-flex flex-spaceBetween">
+            <span class="math tag col-1 col-s-2">數學領域</span>
+            <span class="math tagSimple col-s-2">數學</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">一個好教案首先要依綱扣本，具有科學性。所謂符合科學性，是指教真標準的然後沒有後面了</a>
+            </div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+          <li class="d-flex flex-spaceBetween">
+            <span class="science tag col-1 col-s-2">社會領域</span>
+            <span class="science tagSimple col-s-2">社會</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">古地圖與現今衛星地圖的差異性</a>
+            </div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+          <li class="d-flex flex-spaceBetween">
+            <span class="physical tag col-1 col-s-2">健體領域</span>
+            <span class="physical tagSimple col-s-2">健體</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">認識清領時期台灣農業與水利灌溉的發展</a>
+            </div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+          <li class="d-flex flex-spaceBetween">
+            <span class="society tag col-1 col-s-2">社會領域</span>
+            <span class="society tagSimple col-s-2">社會</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">以學生為本，注重讓學生在課堂上動口、動腦、動手，注重學生潛能的開發一樣沒有後面了</a>
+            </div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+        </div>
+      </div>
+      <!-- 20200428 Linda end -->
+    </div>
+  </section>
+  <section class="proposition">
+    <div class="fixed-width">
+      <div class="h2_title">
+        <h2 class="">
+          <div class="ch d-flex">
+            <span class="bigHead">近</span><span>期上線</span><span class="orange">命題</span>
+          </div>
+          <div class="en">NEW PROPOSITION</div>
+        </h2>
+        <div class="line"></div>
+        <a href="newsList.html" class="more">查看更多</a>
+      </div> 
+      <div class="stage d-flex">
+        <span class="element tab col-s-3 active">- 國小 -</span>
+        <span class="junior tab col-s-3">- 國中 -</span>
+        <span class="senior tab col-s-3">- 高中 -</span>
+        <span class="vocational tab col-s-3">- 高職 -</span>
+      </div>
+      <div class="contentWrap">
+        <!-- 20200428 Linda start -->
+        <div class="element tabContent">
+          <li class="d-flex flex-spaceBetween">
+            <span class="chinese tag col-1 col-s-2">國文領域</span>
+            <span class="chinese tagSimple col-s-2">國文</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">國小-了解如何蒐集資料</a>
+            </div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+          <li class="d-flex flex-spaceBetween">
+            <span class="math tag col-1 col-s-2">數學領域</span>
+            <span class="math tagSimple col-s-2">數學</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">一個好教案首先要依綱扣本，具有科學性。所謂符合科學性，是指教真標準的然後沒有後面了</a></div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+          <li class="d-flex flex-spaceBetween">
+            <span class="science tag col-1 col-s-2">自然領域</span>
+            <span class="science tagSimple col-s-2">自然</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">古地圖與現今衛星地圖的差異性</a></div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+          <li class="d-flex flex-spaceBetween">
+            <span class="physical tag col-1 col-s-2">健體領域</span>
+            <span class="physical tagSimple col-s-2">健體</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">認識清領時期台灣農業與水利灌溉的發展</a></div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+          <li class="d-flex flex-spaceBetween">
+            <span class="society tag col-1 col-s-2">社會領域</span>
+            <span class="society tagSimple col-s-2">社會</span>
+            <div class="lessonTitle one-ellipsis col-9 col-m-8 col-s-6">
+              <a href="#">以學生為本，注重讓學生在課堂上動口、動腦、動手，注重學生潛能的開發一樣沒有後面了</a></div>
+            <span class="time col-2 col-s-4">2020-02-23</span>
+          </li>
+        </div>
+        <!-- 20200428 Linda end -->
+      </div>
+    </div>
+  </section>
+  <section class="video">
+    <div class="fixed-width">
+      <div class="h2_title">
+        <h2 class="">
+          <div class="ch d-flex">
+            <span class="bigHead">近</span><span>期上線</span><span class="blue">影音</span>
+          </div>
+          <div class="en">NEW VIDEO</div>
+        </h2>
+        <div class="line"></div>
+        <a href="newsList.html" class="more">查看更多</a>
+      </div>
+      <div class="videoWrap d-flex flex-wrap">
+        <div class="video-main col-6 col-s-11">
+          <a href="#" class="video-pic">
+            <img src="./images/video_1.jpg" alt="">
+          </a>
+          <div class="info d-flex flex-spaceBetween">
+            <span class="edit col-6 col-m-6 col-s-6"><i class="far fa-edit"></i><span class="name">楊俐容</span></span>
+            <span class="time col-6 col-m-6">2020-03-12</span>
+          </div>
+          <div class="title one-ellipsis">未來教育，學生不只是學「知識」未來教育，學生不只是學「知識」</div>
+        </div>
+        <div class="video-list col-6 col-s-12">
+            <li class="d-flex">
+              <a href="#" class="video-pic col-5 col-m-5 col-s-5">
+                <img src="./images/video_2.jpg" alt="">
+              </a>
+              <div class="col-7 col-m-7 col-s-7">
+                <div class="info d-flex flex-spaceBetween">
+                  <span class="edit col-6 col-m-6 col-s-6"><i class="far fa-edit"></i><span class="name">楊俐容</span></span>
+                  <span class="time col-6 col-m-6 col-s-6">2020-03-12</span>
+                </div>
+                <div class="title two-ellipsis">未來教育，學生不只是學「知識」未來教育，學生不只是學「知識」</div>
+              </div>
+            </li>
+            <li class="d-flex">
+              <a href="#" class="video-pic col-5 col-m-5 col-s-5">
+                <img src="./images/video_3.jpg" alt="">
+              </a>
+              <div class="col-7 col-m-7 col-s-7">
+                <div class="info d-flex flex-spaceBetween">
+                  <span class="edit col-6 col-m-6 col-s-6"><i class="far fa-edit"></i><span class="name">楊俐容</span></span>
+                  <span class="time col-6 col-m-6 col-s-6">2020-03-12</span>
+                </div>
+                <div class="title two-ellipsis">未來教育，學生不只是學「知識」未來教育，學生不只是學「知識」學生不只是學「知識」未來教育，學生不只是學「知識」學生不只是學「知識」未來教育，學生不只是學「知識」</div>
+              </div>
+            </li>
+            <li class="d-flex">
+              <a href="#" class="video-pic col-5 col-m-5 col-s-5">
+                <img src="./images/video_4.jpg" alt="">
+              </a>
+              <div class="col-7 col-m-7 col-s-7">
+                <div class="info d-flex flex-spaceBetween">
+                  <span class="edit col-6 col-m-6 col-s-6"><i class="far fa-edit"></i><span class="name">楊俐容</span></span>
+                  <span class="time col-6 col-m-6 col-s-6">2020-03-12</span>
+                </div>
+                <div class="title two-ellipsis">未來教育，學生不只是學「知識」未來教育，學生不只是學「知識」</div>
+              </div>
+            </li>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </section>
+  <footer>
+    <div class="footerContent">
+      <div class="fixed-width d-flex footerWrap flex-wrap">
+        <div class="company col-5 col-m-4 col-s-12">
+          <!-- 20200417 Linda start -->
+          <div class="logoPic d-flex">
+            <a href="http://www.csofe.org/index/index" class="csfes">
+              <img src="./images/CSFES-01.png" alt="">
+            </a>
+            <!-- <a href="#" class="tkbLogo">
+              <img src="./images/TKBLOGO.png" alt="">
+            </a> -->
+          </div>
+          <div class="info">
+            <li>
+              <label>公司電話：</label>02-2331-5551
+            </li>
+            <li>
+              <label>公司地址：</label>台北市中正區博愛路60號3樓
+            </li>
+            <li>
+              <label>服務時間：</label><br>
+              <span>週一~五 10:00~22:00<br>週六~日、例假日 9:00~18:00</span>
+            </li>
+            <li>建議瀏覽器：Chrome</li>
+          </div>
+          <!-- 20200417 Linda end -->
+        </div>
+        <div class="footerMenu col-8 col-m-5 col-s-12">
+          <div class="d-flex">
+            <div class="about col-4">
+              <li>關於我們</li>
+              <li class="item"><a href="#">設計理念</a></li>
+              <li class="item"><a href="#">聯繫我們</a></li>
+            </div>
+            <div class="customer col-4">
+              <li>客服中心</li>
+              <li class="item"><a href="#">常見問題</a></li>
+              <li class="item"><a href="#">聯絡資訊</a></li>
+            </div>
+            <div class="service col-4">
+              <li>服務條款</li>
+              <li class="item"><a href="#">使用規範</a></li>
+              <li class="item"><a href="#">著作權聲明</a></li>
+              <li class="item"><a href="#">著作侵權檢舉</a></li>
+            </div>
+          </div>
+          <!-- 20200422 Linda start -->
+          <div class="cooperation col-3">
+            <div class="label-text">合作單位</div>
+            <a href="#" class="tkbLogo">
+              <img src="./images/TKBLOGO.png" alt="">
+            </a>
+          </div>
+          <!-- 20200422 Linda end -->
+        </div>
+        <!-- <div class="col-3 col-m-2 qrCode">
+          <img src="./images/170003173513.png" alt="">
+        </div> -->
+      </div>
+      <!-- <div class="fixed-width">
+        <div class="info col-12">
+          <li>學會電話：0982-545-574</li>
+          <li>學會地址：台北市中正區愛國東路34號2樓</li>
+          <li>服務時間：週一~五 10:00~22:00</li>
+          <li>建議瀏覽器：IE10(含)以上</li>
+        </div>
+      </div> -->
+    </div>
+    <div class="copyRight">
+      <div class="fixed-width">
+        <p>Copyright <i class="far fa-copyright"></i> TKB台灣知識庫 All RightsReserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,561 @@
+/* lessonList */
+.breadCrumb {
+  margin: 25px 0;
+}
+.crumb-item+.crumb-item::before {
+  content: "/";
+  /* height: 100%; */
+  display: inline-block;
+  padding: 0 5px;
+  color: #ddd;
+}
+.crumb-item >a {
+  color: #554a3c;
+}
+.here {
+  color: #554a3c;
+  font-weight: 500;
+}
+.tagSearch {
+  margin: 0px 30px 30px;
+  font-size: 1.2rem;
+}
+.keyWord {
+  font-weight: 700;
+  padding: 0 8px;
+  /* text-decoration: under; */
+}
+.main-body {
+  padding: 15px 0;
+}
+.fliter, .advanced-item {
+  padding: 0 30px;
+}
+.fliter-item {
+  font-size: 1.2rem;
+  margin: 0px 20px 20px 0 ;
+  display: inline-block;
+  font-weight: 650;
+}
+select {
+  border-radius: 5px;
+  width: 200px;
+  max-width: 60%;
+  height: 1.5rem;
+  padding-left: 8px;
+  background-color: #fff;
+  font-size: 0.9rem;
+}
+.area-item {
+  margin: 10px 0 30px;
+}
+.area-item li {
+  padding: 10px 0;
+}
+.area-item input {
+  margin-right: 8px;
+}
+.buttons {
+  margin: 30px 0;
+  text-align: center;
+}
+.buttons>button {
+  color: #fff;
+  border-radius: 5px;
+}
+.fliter button {
+  background-color:#8b7e6d;
+}
+
+/* 20200420 Linda button:hover */
+.fliter button:hover {
+  color: #000;
+  background-color:#d8c1a2;
+}
+/* 20200420 Linda button:hover */
+
+.advanced {
+  background-color: #f1f1e7;
+  padding: 25px 0;
+  display: none;
+}
+.advanced input[type=text], .search input[type=text]{
+  min-width: 50%;
+  outline: none;
+  border: none;
+  line-height: 2rem;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px 0 0 10px;
+}
+button.search {
+  width: 10%;
+  line-height: 2rem;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+}
+
+/* 20200423 Linda m-advanced start */
+.m-advanced {
+  width: 768px;
+  max-width: 80%;
+  margin: 10% auto;
+  padding: 20px 15px;
+  position: relative;
+  background-color: rgb(233, 233, 233);
+  display: none;
+}
+.searchBar {
+  padding: 10px 0;
+}
+.m-advanced input[name="search"] {
+  width: 80%;
+  border: none;
+  border-radius: 10px 0 0 10px ;
+  padding-left: 10px;
+  height: 1.9rem;
+}
+.m-advanced button.search {
+  width: 40px;
+  min-width: 5%;
+  line-height: 37px;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+.m-advanced .buttons>button {
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 100%;
+}
+
+/* 20200423 Linda m-advanced end */
+.cross {
+  border-top: .8px solid #ddd;
+}
+/* 20200422 Linda start */
+
+.gridHead {
+  margin-top: 30px;
+  background-color: rgb(241, 241, 241);
+  border: 0.5px solid #e0e0e0;
+  border-right: none;
+  line-height: 2.4rem;
+}
+.gridHead:nth-last-child(2) {
+  border-right: 0.8px solid #e0e0e0;
+}
+.listRow .area, .listRow .file, .listRow .author, .listRow .createTime {
+  line-height: 2.4rem;
+  border-bottom: .8px solid #eee;
+  border-left: .8px solid #eee;
+}
+.info-item .createTime, .info-item .updateTime {
+  padding-left: 5px;
+  border: none;
+}
+.area {
+  border-left: .8px solid #eee;
+}
+/* 20200422 Linda end */
+.file {
+  text-align-last: left;
+  padding: 0 8px;
+}
+
+/* proposition */
+
+.page-show select {
+  width: 50px;
+}
+/* proposition subject */
+.boxWrap {
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.boxWrap:nth-last-child(2) {
+  border-bottom: none;
+}
+.boxWrap>div {
+  margin: 15px 0;
+}
+.boxWrap .tag {
+  line-height: 1.5rem;
+  margin-right: 8px;
+  /* display: inline-block; */
+}
+.subject {
+  align-items: center;
+}
+.subject span {
+  border: 1px solid #ff583d;
+}
+.propositionTitle {
+  align-items: center;
+  color: #746a5e;
+  max-width: 88%;
+}
+.propositionTitle span {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  /* min-width: 80%; */
+  cursor: pointer;
+} 
+.propositionTitle i {
+  margin-right: 8px;
+  display: inline-block;
+}
+button.download {
+  width: 48px;
+  height: 48px;
+}
+/* 20200420 Linda button:hover */
+.advanced button:hover, button.download:hover {
+  background-color: #30b49c;
+}
+/* 20200420 Linda button:hover */
+.download i {
+  color: #fff;
+}
+.propositionInfo {
+  grid-template-columns: 50% 50%;
+  padding: 10px 55px;
+  background-color: #f6f4e7;
+}
+.grid-item {
+  padding: 8px 5px;
+  border: none;
+}
+.propositionInfo .grid-item:last-child {
+  grid-column: 1 / 3;
+  color: #9b8a70;
+}
+/* 20200427 newsList Linda */
+.search input[type=text] {
+  background-color: #eee;
+  border: none;
+}
+.sort .tab {
+  line-height: 1.3rem;
+}
+.page {
+  position: relative;
+  padding: 30px 0;
+}
+
+li.page-item {
+  line-height: 2rem;
+  width: 2rem;
+  margin: 0 3px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #554a3c;
+  border: 1px solid #554a3c;
+  border-radius: 2px;
+}
+li.page-item.active {
+  color: #fff;
+  background-color: #554a3c;
+}
+
+@media only screen and (min-width: 320px) {
+  .h2_title {
+    margin: 3% 0 0;
+  }
+  .h2_title .ch {
+    justify-content: flex-start;
+  }
+  .tagSearch {
+    margin: 0 0 15px;
+  }
+  .fliter {
+    padding: 0;
+  }
+  .fliter .d-flex {
+    flex-wrap: wrap
+  }
+  .buttons {
+    margin: 10px 0 15px;
+  }
+  .buttons>button {
+    max-width: 48%;
+    width: 150px;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .fliter .area-item {
+    display: none;
+  }
+  .result {
+    padding: 15px 0 35px;
+  }
+  .result-stats {
+    display: none;
+  }
+  .m-result-stats {
+    line-height: 24px;
+  }
+  .listRow span.tag {
+    display: none;
+  }
+  .gridHead {
+    margin-top: 15px;
+  }
+  .gridHead:first-child, .area {
+    display: none;
+  }
+  .resultList.grid .listRow {
+    /* grid-template-columns: 50% 25% 25%; */
+    grid-template-columns: 70% 30%;
+    text-align: center;
+  }
+  .gridHead:nth-last-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridHead:nth-last-child(2), .gridHead:nth-last-child(3) {
+    display: none;
+  }
+  .author.grid-item, .createTime.grid-item {
+    display: none;
+  }
+  .mix>div {
+    line-height: 1.8rem;
+  }
+  .mix .author ,.mix .createTime {
+    border-right: .8px solid #eee;
+    line-height: 2rem;
+  }
+  .tagSimple {
+    display: inline-block;
+  }
+  /* proposition */
+  .boxWrap .tagSimple {
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 15px;
+  }
+  .propositionTitle .fa-buffer {
+    display: none;
+  }
+  .propositionTitle span {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .propositionInfo.grid {
+    padding: 0;
+    grid-template-columns: 50% 50%;
+  }
+  .boxWrap .grid-item {
+    border: .5px solid #597973;
+    border-bottom: none;
+    border-right: none;
+    align-items: center;
+  }
+  .boxWrap .grid-item:nth-child(4) {
+    display: flex;
+  }
+  .grid-item .quizObject {
+    display: block;
+  }
+  .boxWrap .grid-item:nth-child(2), .boxWrap .grid-item:nth-child(4), .boxWrap .grid-item:last-child {
+    border-right: .5px solid #597973;
+  }
+  .boxWrap .grid-item:last-child {
+    border-bottom: .5px solid #597973;
+  }
+  .grid-item .coreLiteracy {
+    line-height: 1.3rem;
+  }
+  /* 20200427 Linda newsList */
+  .search input[type=text] {
+    width: 80%;
+    margin: 10px 0 15px;
+  }
+  .sort .tab {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5%;
+    padding: 3px 0;
+  }
+  .resultList.news {
+    margin-top: 10px;
+  }
+  .news .listRow  {
+    margin-bottom: 20px;
+  }
+  .news .lab, .news .newsPic {
+    display: none;
+  }
+  .news .m-newspic {
+    display: block;
+    position: relative;
+  }
+  .info-item label {
+    display: none;
+  }
+  .info-item.title {
+    color: #746a5e;
+    line-height: 1.5rem;
+  }
+  .newsInfo span {
+    margin-right: 10px;
+    color: #868686;
+    font-size: .9rem;
+  }
+  .page {
+    padding: 15px 0 0;
+  }
+  .pagination {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .buttons>button {
+    width: 150px;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+  #learningArea {
+    display: none;
+  }
+  .gridHead:first-child {
+    display: block;
+  }
+  .fliter .area-item {
+    display: flex;
+    flex-wrap: wrap;
+  } 
+  .mix.gridHead {
+    display: none
+  }
+  .gridHead:nth-last-child(2), .gridHead:nth-last-child(3) {
+    display: block;
+  }
+  .area.grid-item {
+    display: block;
+  }
+  .result {
+    padding: 30px 0 50px;
+  }
+  .result-stats {
+    display: block;
+  }
+  .m-result-stats {
+    display: none;
+  }
+  .listRow span.tag {
+    display: inline-block;
+  }
+  .resultList.grid .listRow {
+    grid-template-columns: 15% 55% 15% 15%;
+    text-align: center;
+  }
+  .mix .author, .mix .createTime {
+    display: none;
+  }
+  .author.grid-item, .createTime.grid-item {
+    display: block;
+  }
+  .createTime {
+    border-right: .8px solid #eee;
+  }
+  .boxWrap .grid-item {
+    border: none;
+  }
+  .grid-item:nth-child(3) span {
+    display: inline;
+  }
+  .boxWrap .grid-item:nth-child(2), .boxWrap .grid-item:nth-child(4), .boxWrap .grid-item:last-child {
+    border: none;
+  }
+  .tagSimple {
+    display: none
+  }
+  .boxWrap .tag, .boxWrap .subjectTag {
+    display: block;
+  }
+/* 20200427 Linda newsList */
+  div.search {
+    margin-bottom: 10px;
+  }
+  .search input {
+    width: 50%;
+    margin: 20px 0 15px;
+    line-height: 2rem;
+  }
+  .search .tab {
+    min-width: 100px;
+    padding: 5px 0;
+    margin: 0 0 20px 0;
+  }
+  .sort {
+    width: 30%;
+  }
+  .news .listRow {
+    grid-template-columns: 5% 32% 63%;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  .news .listRow >div {
+    padding: 0 10px;
+  }
+  .news .lab {
+    justify-content: center;
+    align-items: stretch;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+  }
+  .lab span {
+    background-color: #746a5e;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    line-height: 1.1rem;
+  }
+  .news .lab, .news .newsPic{
+    display: flex;
+  }
+  .info-item label {
+    display: inline;
+  }
+  .news .m-newspic {
+    display: none;
+  }
+  .info-item i {
+    margin-right: 5px;
+  }
+  /* .info-item .createTime, .info-item .updateTime {
+    padding-left: 5px;
+    border: none;
+  } */
+  .info-item.title {
+    color: #746a5e;
+    cursor: pointer;
+    line-height: 1.5rem;
+  }
+  .info-item.title:hover {
+    opacity: .8;
+  }
+  .pagination {
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .area-item ul {
+    flex-wrap: wrap;
+  }
+  .result-stats {
+    display: block;
+  }
+  .listRow span.tag {
+    display: inline-block;
+  }
+  .m-result-stats {
+    display: none;
+  }
+  /* 20200427 Linda newsList */
+  .lab span {}
+  
+}

@@ -1,0 +1,734 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hind+Madurai:wght@600&family=IBM+Plex+Sans&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hind+Madurai:wght@600&family=IBM+Plex+Sans&family=Roboto:wght@300;400;500&display=swap');
+/* @import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexming.css");
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexkai.css"); */
+/* 20200420 Linda fontType */
+/* @font-face{
+  　font-family: NewFont;
+  　src: local(字型檔), url(字型檔案網址);
+  　font-weight: bold;
+  } */
+body {
+  font-family: "FontAwesome", "Century Gothic", "Arial", "cwTeXYen", "Noto Sans TC", "微軟正黑體",sans-serif;
+  color: #5e564d;
+}
+/* 20200420 Linda fontType */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.d-flex {
+  display: flex;
+}
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+}
+/* .flex-centerCenter {
+  display: ;
+} */
+.flex-spaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-spaceEvenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.grid {
+  display: grid;
+}
+
+[class*="col-"] {
+  padding: 0 8px;
+}
+.header {
+  background-color: #746a5e;
+}
+.menu {
+  font-size: 1rem;
+  /* display: none; */
+}
+.nav-btn {
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding: 0 30px;
+  margin: auto 0;
+  display: inline-block;
+}
+.m-mobile {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  /* margin-right: 6%; */
+}
+/* 20200419 Linda buger start */
+.layer {
+  background-color: rgba(185, 185, 185, 0.61);
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  /* padding: 10% 0; */
+  height: 100vh;
+  display: none;
+}
+.fa-times-circle {
+  right: 1%;
+  top: 3%;
+  position: absolute;
+  color: #746a5e;
+}
+.menu-wrap {
+  width: 768px;
+  max-width: 80%;
+  margin: 10% auto;
+  padding: 30px 30px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.836);
+  display: none;
+}
+.menu-item {
+  text-align: center;
+  line-height: 3.6rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #746a5e;
+}
+.menu-item a, .menu-item span {
+  color: #746a5e;
+}
+/* 20200419 Linda end */
+
+.wrap {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.banner {
+  background-color: #f2f2e8;
+  padding: 50px 0;
+}
+.one-ellipsis {
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.two-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.three-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.h2_title {
+  position: relative;
+  margin: 50px 0 30px;
+}
+.ch .bigHead {
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.4rem;
+  color: #746a5e;
+  display: inline-block;
+}
+.ch {
+  letter-spacing: .5px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+.bigHead {
+  font-size: 2rem;
+}
+
+.line {
+  display: inline-block;
+}
+.line::after {
+  content:"";
+  display: inline-block;
+  position: absolute;
+  bottom: 55%;
+  right: 0;
+  border-bottom: 1px solid #746a5e ;
+}
+
+.en {
+  font-size: .8rem;
+  letter-spacing: 2px;
+  padding: 5px 0;
+  font-weight: 400;
+  text-align: center;
+  /* display: inline-block; */
+}
+.more {
+  cursor: pointer;
+  border: 1px solid #30b49c;
+  color: #30b49c;
+  padding: 5px 8px;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.newsArea {
+  padding: 0 10px;
+  cursor: pointer;
+}
+/* lesson area */
+.tabContent {
+  margin: 20px 0;
+}
+li {
+  list-style: none;
+}
+.lessonPlan li, .proposition li {
+  padding: 10px 0;
+  line-height: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  cursor: pointer;
+  border: .5px solid #e2e5d2;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #746a5e;
+}
+/* 20200417 1400 Linda start */
+.lessonPlan .tab.active, .sort .tab.active {
+  color: #fff;
+  background-color: #30b49c;
+  border: none;
+}
+
+.proposition .tab.active {
+  color: #fff;
+  background-color: #ff583d;
+  border: none;
+}
+/* 20200417 1400 Linda end */
+li:last-child {
+  border: none;
+}
+.tag {
+  padding: 0px 12px;
+  text-align: center;
+  background-color: #fff;
+  display: block;
+}
+.tagSimple {
+  display: none;
+  padding: 0px 3px;
+  text-align: center;
+}
+.lessonTitle {
+  display: inline-block;
+  cursor: pointer;
+}
+.lessonTitle a {
+  color: #746a5e;
+}
+.lessonTitle a:hover {
+  color: #aaa;
+}
+
+/* tags color */
+.chinese {
+  border: 1.2px solid #e38f8f ;
+}
+.math {
+  border: 1.2px solid #fdb41a ;
+}
+.science {
+  border: 1.2px solid #8fbae4 ;
+}
+.physical {
+  border: 1.2px solid #a9b52f ;
+}
+.society {
+  border: 1.2px solid #91e3d7 ;
+}
+/* 20200417 Linda start */
+.history {
+  border: 1.2px solid #91e3d7 ;
+}
+.geography {
+  border: 1.2px solid #91e3d7 ;
+}
+.citizen {
+  border: 1.2px solid #91e3d7 ;
+}
+/* 20200417 Linda end */
+.all {
+  border: 1.2px solid ;
+}
+.art {
+  border: 1.2px solid #a180dd ;
+}
+.tech {
+  border: 1.2px solid #75bebe ;
+}
+.living {
+  border: 1.2px solid #aace58 ;
+}
+.time {
+  text-align: right;
+}
+/* video area */
+.videoWrap {
+  margin: 20px 0;
+}
+.video-main {
+  background-color: #ececec;
+}
+.video-pic {
+  display: block;
+}
+.info {
+  font-size: 1rem;
+}
+.info>span {
+  padding: 8px 0;
+}
+/* 20200422 Linda start */
+.title {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.title:hover {
+  color: #746a5e;
+}
+/* 20200422 Linda end */
+.video-list .title {
+  line-height: 1.8rem;
+}
+.edit i {
+  color: #6095ff;
+  margin-right: 5%;
+  font-size: 1.2rem;
+}
+
+.video-list>li {
+  margin: 2% 0;
+}
+/* footer */
+footer {
+  color: #fff;
+}
+
+.footerContent {
+  background-color: #746a5e;
+  padding: 2% 0;
+}
+.footerContent li {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+.footerWrap {
+  align-content: center;
+}
+.about li:first-child, .customer li:first-child, .service li:first-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footerMenu a {
+  color: #fff;
+  opacity: 0.7;
+}
+.csfes {
+  margin-bottom: 15px;
+}
+.qrCode {
+  text-align: right;
+}
+.info>li {
+  letter-spacing: 1px;
+}
+.copyRight {
+  background-color: #4b423b;
+  font-size: .8rem;
+  padding: 15px 0;
+}
+
+
+
+@media only screen and (min-width:320px) {
+  .col-s-12 {
+    width: calc(100% / 12 * 12);
+  }
+  .col-s-11 {
+      width: calc(100% / 12 * 11);
+  }
+  .col-s-10 {
+      width: calc(100% / 12 * 10);
+  }
+  .col-s-9 {
+      width: calc(100% / 12 * 9);
+  }
+  .col-s-8 {
+      width: calc(100% / 12 * 8);
+  }
+  .col-s-7 {
+      width: calc(100% / 12 * 7);
+  }
+  .col-s-6 {
+      width: calc(100% / 12 * 6);
+  }
+  .col-s-5 {
+      width: calc(100% / 12 * 5);
+  }
+  .col-s-4 {
+      width: calc(100% / 12 * 4);
+  }
+  .col-s-3 {
+      width: calc(100% / 12 * 3);
+  }
+  .col-s-2 {
+      width: calc(100% / 12 * 2);
+  }
+  .col-s-1 {
+      width: calc(100% / 12 * 1);
+  }
+  .full-width {
+    width: 100%;
+  }
+  .fixed-width {
+    width: 90%;
+    margin: auto;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .logo {
+    margin: 5px 0;
+  }
+  .logo a img {
+    min-width: 50%;
+  }
+  .menu {
+    /* visibility: hidden; */
+    display: none;
+  }
+  .m-mobile {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+  .wrap {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .line::after {
+    max-width: 65%;
+    width: 68%;
+  }
+  .lessonPlan .line:after, .proposition .line::after, .video .line::after {
+    content:"";
+    max-width: 80%;
+    width: 50%;
+    position: absolute;
+  }
+  .tab {
+    font-size: 1rem;
+    padding: 8px 8px;
+    text-align: center;
+    margin-right: 5px;
+  }
+  .tag {
+    display: none;
+  }
+  .tagSimple {
+    display: block;
+    text-align: center;
+  }
+  .item {
+    font-size: .8rem;
+  }
+  .video-main {
+    padding: 20px 5%;
+  }
+  .company {
+    order: 2;
+  }
+  .footerContent {
+    padding: 20px 0;
+  }
+  .footerMenu {
+    justify-content: space-between;
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .about li:first-child, .customer li:first-child, .service li:first-child {
+    font-size: 1rem;
+  }
+  .footerContent li {
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    padding: 0;
+  }
+  .copyRight p {
+    text-align: center;
+  }
+  /* .info label {
+    display: none;
+  } */
+}
+
+@media only screen and (min-width:768px) {
+  .col-m-12 {
+    width: calc(100% / 12 * 12);
+  }
+  .col-m-11 {
+      width: calc(100% / 12 * 11);
+  }
+  .col-m-10 {
+      width: calc(100% / 12 * 10);
+  }
+  .col-m-9 {
+      width: calc(100% / 12 * 9);
+  }
+  .col-m-8 {
+      width: calc(100% / 12 * 8);
+  }
+  .col-m-7 {
+      width: calc(100% / 12 * 7);
+  }
+  .col-m-6 {
+      width: calc(100% / 12 * 6);
+  }
+  .col-m-5 {
+      width: calc(100% / 12 * 5);
+  }
+  .col-m-4 {
+      width: calc(100% / 12 * 4);
+  }
+  .col-m-3 {
+      width: calc(100% / 12 * 3);
+  }
+  .col-m-2 {
+      width: calc(100% / 12 * 2);
+  }
+  .col-m-1 {
+      width: calc(100% / 12 * 1);
+  }
+  .full-width {
+    width: 100%;
+  }
+  .fixed-width {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .menu {
+    display: none;
+  }
+  .m-mobile {
+    display: flex;
+  }
+  .nav-btn {
+    padding: 0 20px;
+  }
+  .line::after {
+    max-width: 88%;
+    width: 80%;
+  }
+  .lessonPlan .line:after, .proposition .line::after, .video .line::after {
+    content:"";
+    max-width: 75%;
+    width: 960px;
+    position: absolute;
+  }
+  .one-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+  .stage {
+    max-width: 50%;
+    width: 300px;
+  }
+  /* 20200420 Linda start */
+  .tag {
+    display: inline-block
+  }
+  /* 20200420 Linda end */
+  .tagSimple {
+    display: none;
+  }
+  .video-main {
+    padding: 20px 3%;    
+  }
+  .video-list .info {
+    flex-wrap: wrap;
+  }
+  .video-list .info .edit {
+    text-align: left;
+  }
+  .canpany {
+    order: 1;
+  }
+  .footerMenu {
+    order: 2;
+  }
+  .copyRight p {
+    text-align: left;
+  }
+
+}
+/* @media only screen and (min-width:1100px) {
+  .flex-wrap {
+    flex-wrap: nowrap;
+  }
+} */
+@media only screen and (min-width:1280px) {
+  .col-12 {
+      width: calc(100% / 12 * 12);
+  }
+  .col-11 {
+      width: calc(100% / 12 * 11);
+  }
+  .col-10 {
+      width: calc(100% / 12 * 10);
+  }
+  .col-9 {
+      width: calc(100% / 12 * 9);
+  }
+  .col-8 {
+      width: calc(100% / 12 * 8);
+  }
+  .col-7 {
+      width: calc(100% / 12 * 7);
+  }
+  .col-6 {
+      width: calc(100% / 12 * 6);
+  }
+  .col-5 {
+      width: calc(100% / 12 * 5);
+  }
+  .col-4 {
+      width: calc(100% / 12 * 4);
+  }
+  .col-3 {
+      width: calc(100% / 12 * 3);
+  }
+  .col-2 {
+      width: calc(100% / 12 * 2);
+  }
+  .col-1 {
+      width: calc(100% / 12 * 1);
+  }
+  /* .full-width {
+    width: 100%;
+} */
+  .fixed-width {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }  
+  .videoWrap {
+    flex-wrap: nowrap;
+  }
+  .m-mobile {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    font-size: 1.2rem;
+  }
+  .about {
+    margin-left: 15%;
+  }
+  /* 20200422 Linda start */
+  .cooperation {
+    margin-left: 15%;
+    margin-top: 5px;
+  }
+  .label-text {
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  /* 20200422 Linda end */
+  .line::after {
+    max-width: 88%;
+    width: 100%;
+  }
+  .lessonPlan .line:after, .proposition .line::after, .video .line::after {
+    content:"";
+    max-width: 82%;
+    width: 1200px;
+  }
+}
+
+.nav-btn:last-child {
+  border: none;
+  cursor: pointer;
+}
+.newsWrap {
+  margin-bottom: 50px;
+}
+
+.banner-pic {
+  position: relative;
+}
+.label {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 8px 0;
+  letter-spacing: 1.3px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  opacity: .9;
+  font-weight: 500;
+}
+.sys {
+  background-color: #746a5e;
+  color: #fff;
+}
+.last {
+  background-color: #fff;
+  color: #746a5e;
+}
+.newsTitle {
+  background-color: #f2f2e8;
+  font-size: 1.4rem;
+  padding: 10px 15px 5px;
+  line-height: 2rem;
+  min-height: 67%;
+}
+/* 20200418 Linda start */
+.green {
+  color: #30b49c ;
+  /* margin-right: 8px; */
+}
+.bg-green {
+  background-color: #30b49c ;
+}
+.orange {
+  color: #ff583d ;
+  /* margin-right: 8px; */
+}
+.bg-orange {
+  background-color: #ff583d ;
+}
+/* 20200418 Linda end */
+.blue {
+  color: #6095ff ;
+  /* margin-right: 8px; */
+}

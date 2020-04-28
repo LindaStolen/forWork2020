@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>最新消息列表</title>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/listStyle.css">
+  <link rel="stylesheet" href="./css/contentStyle.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <div class="layer">
+    <ul class="menu-wrap">
+      <i class="fas fa-times-circle fa-lg"></i>
+      <li class="menu-item"><a class="nav-btn" href="newsList.html">最新消息</a></li>
+      <li class="menu-item"><a class="nav-btn" href="lessonList.html">教案</a></li>
+      <li class="menu-item"><a class="nav-btn" href="propositionList.html">命題</a></li>
+      <li class="menu-item"><a class="nav-btn" href="#">影音</a></li>
+      <li class="menu-item"><a class="nav-btn" href="#">關於我們</a></li>
+      <li class="menu-item"><span class="nav-btn" href="#">登入</span></li>
+    </ul>
+  </div>
+  <section class="header">
+    <div class="d-flex fixed-width">
+      <div class="logo d-flex col-4 col-m-7 col-s-10">
+        <a href="http://www.csofe.org/index/index">
+          <img src="./images/CSFES-01.png" alt="未來教育學會">
+        </a>
+        <!-- <a href="#" class="tkbLogo">
+          <img src="./images/TKBLOGO.png" alt="TKB台灣知識庫">
+        </a> -->
+      </div>
+      <nav class="menu col-m-8 col-8 flex-right">
+        <a class="nav-btn" href="#">最新消息</a>
+        <a class="nav-btn" href="#">教案</a>
+        <a class="nav-btn" href="#">命題</a>
+        <a class="nav-btn" href="#">影音</a>
+        <a class="nav-btn" href="#">關於我們</a>
+        <span class="nav-btn" href="#">登入</span>
+      </nav>
+      <div class="m-mobile col-m-5 col-s-2 flex-right">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="fixed-width">
+      <div class="breadCrumb">
+        <ol class="d-flex">
+          <li class="crumb-item">
+            <a href="index.html">首頁</a>
+          </li>
+          <li class="crumb-item here">
+            最新消息
+          </li>
+        </ol>
+      </div>
+      <div class="h2_title">
+        <h2 class="">
+          <div class="ch d-flex">
+            <span class="bigHead">最</span><span>新消息</span>
+          </div>
+          <div class="en">HOT NEWS</div>
+        </h2>
+        <div class="line"></div>
+      </div>
+      <div class="search">
+        <form action="">
+          <input type="text" name="search" placeholder="請輸入命題標題或關鍵字..."><button type="submit" class="search"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="sort d-flex">
+          <div class="total tab active">全部</div>
+          <div class="newest tab">最新發布</div>
+          <div class="system tab">系統公告</div>
+        </div>
+        <div class="cross"></div>
+      </div>
+    </div>
+  </section>
+  <section class="result">
+    <div class="fixed-width">
+      <div class="d-flex flex-spaceBetween">
+        <div class="result-stats">搜尋結果共260筆資料符合條件</div>
+        <div class="m-result-stats">資料總筆數：260筆</div>
+        <div class="page-show">每頁以
+          <select name="" id="">
+            <option value="0">10</option>
+            <option value="1">15</option>
+            <option value="2">20</option>
+          </select>
+          筆
+        </div>
+      </div>
+      <div class="resultList news">
+        <div class="listRow grid">
+          <div class="lab d-flex">
+            <span>系統公告</span>
+          </div>
+          <div class="newsPic">
+            <a href="#">
+              <img src="./images/newsPic_01.jpg" alt="">
+            </a>
+          </div>
+          <div class="m-newspic">
+            <img src="./images/newsPic_01.jpg" alt="">
+            <div class="label sys">系統公告</div>
+          </div>
+          <div class="newsInfo">
+            <span class="info-item">
+                <i class="fas fa-calendar-alt green"></i>
+                <label>發布日期</label>
+                <span class="createTime">2019-09-24</span>
+            </span>
+            <span class="info-item">
+                <i class="fas fa-history green"></i><label>更新日期</label>
+                <span class="updateTime">2019-09-26</span>
+            </span>
+            <div class="info-item title">
+              家裡有國中、高中的孩子請注意！也請大家共同分享這個活動訊息：108年新課綱即將上路
+            </div>
+          </div>
+        </div>
+        <div class="listRow grid">
+          <div class="lab d-flex">
+            <span>系統公告</span>
+          </div>
+          <div class="newsPic">
+            <a href="#">
+              <img src="./images/newsPic_01.jpg" alt="">
+            </a>
+          </div>
+          <div class="m-newspic">
+            <img src="./images/newsPic_01.jpg" alt="">
+            <div class="label sys">系統公告</div>
+          </div>
+          <div class="newsInfo">
+            <span class="info-item">
+                <i class="fas fa-calendar-alt green"></i>
+                <label>發布日期</label>
+                <span class="createTime">2019-09-24</span>
+            </span>
+            <span class="info-item">
+                <i class="fas fa-history green"></i><label>更新日期</label>
+                <span class="updateTime">2019-09-26</span>
+            </span>
+            <div class="info-item title">
+              家裡有國中、高中的孩子請注意！也請大家共同分享這個活動訊息：108年新課綱即將上路
+            </div>
+          </div>
+        </div>
+        <div class="listRow grid">
+          <div class="lab d-flex">
+            <span>系統公告</span>
+          </div>
+          <div class="newsPic">
+            <a href="#">
+              <img src="./images/newsPic.jpg" alt="">
+            </a>
+          </div>
+          <div class="m-newspic">
+            <img src="./images/newsPic_01.jpg" alt="">
+            <div class="label sys">系統公告</div>
+          </div>
+          <div class="newsInfo">
+            <span class="info-item">
+                <i class="fas fa-calendar-alt green"></i>
+                <label>發布日期</label>
+                <span class="createTime">2019-09-24</span>
+            </span>
+            <span class="info-item">
+                <i class="fas fa-history green"></i><label>更新日期</label>
+                <span class="updateTime">2019-09-26</span>
+            </span>
+            <div class="info-item title">
+              家裡有國中、高中的孩子請注意！也請大家共同分享這個活動訊息：108年新課綱即將上路
+            </div>
+          </div>
+        </div>
+        <div class="listRow grid">
+          <div class="lab d-flex">
+            <span>系統公告</span>
+          </div>
+          <div class="newsPic">
+            <a href="#">
+              <img src="./images/newsPic_01.jpg" alt="">
+            </a>
+          </div>
+          <div class="m-newspic">
+            <img src="./images/newsList_0002_003.jpg" alt="">
+            <div class="label sys">系統公告</div>
+          </div>
+          <div class="newsInfo">
+            <span class="info-item">
+                <i class="fas fa-calendar-alt green"></i>
+                <label>發布日期</label>
+                <span class="createTime">2019-09-24</span>
+            </span>
+            <span class="info-item">
+                <i class="fas fa-history green"></i><label>更新日期</label>
+                <span class="updateTime">2019-09-26</span>
+            </span>
+            <div class="info-item title">
+              家裡有國中、高中的孩子請注意！也請大家共同分享這個活動訊息：108年新課綱即將上路
+            </div>
+          </div>
+        </div>
+        <div class="page">
+          <ul class="pagination d-flex">
+            <li class="page-item">
+              <i class="fas fa-angle-double-left"></i>
+            </li>
+            <li class="page-item active">1</li>
+            <li class="page-item">2</li>
+            <li class="page-item">3</li>
+            <li class="page-item">4</li>
+            <li class="page-item">5</li>
+            <li class="page-item">...</li>
+            <li class="page-item">
+              <i class="fas fa-angle-double-right"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+      <div class="footerContent">
+        <div class="fixed-width d-flex footerWrap flex-wrap">
+          <div class="company col-5 col-m-4 col-s-12">
+            <div class="logoPic d-flex">
+              <a href="http://www.csofe.org/index/index" class="csfes">
+                <img src="./images/CSFES-01.png" alt="">
+              </a>
+              <!-- <a href="#" class="tkbLogo">
+                <img src="./images/TKBLOGO.png" alt="">
+              </a> -->
+            </div>
+            <div class="info">
+              <li>
+                <label>公司電話：</label>02-2331-5551
+              </li>
+              <li>
+                <label>公司地址：</label>台北市中正區博愛路60號3樓
+              </li>
+              <li>
+                <label>服務時間：</label><br>
+                <span>週一~五 10:00~22:00<br>週六~日、例假日 9:00~18:00</span>
+              </li>
+              <li>建議瀏覽器：Chrome</li>
+            </div>
+          </div>
+          <div class="footerMenu col-8 col-m-5 col-s-12">
+            <div class="d-flex">
+              <div class="about col-4">
+                <li>關於我們</li>
+                <li class="item"><a href="#">設計理念</a></li>
+                <li class="item"><a href="#">聯繫我們</a></li>
+              </div>
+              <div class="customer col-4">
+                <li>客服中心</li>
+                <li class="item"><a href="#">常見問題</a></li>
+                <li class="item"><a href="#">聯絡資訊</a></li>
+              </div>
+              <div class="service col-4">
+                <li>服務條款</li>
+                <li class="item"><a href="#">使用規範</a></li>
+                <li class="item"><a href="#">著作權聲明</a></li>
+                <li class="item"><a href="#">著作侵權檢舉</a></li>
+              </div>
+            </div>
+            <div class="cooperation col-3">
+              <div class="label-text">合作單位</div>
+              <a href="#" class="tkbLogo">
+                <img src="./images/TKBLOGO.png" alt="">
+              </a>
+            </div>
+          </div>
+          <!-- <div class="col-3 col-m-2 qrCode">
+            <img src="./images/170003173513.png" alt="">
+          </div> -->
+        </div>
+        <!-- <div class="fixed-width">
+          <div class="info col-12">
+            <li>學會電話：0982-545-574</li>
+            <li>學會地址：台北市中正區愛國東路34號2樓</li>
+            <li>服務時間：週一~五 10:00~22:00</li>
+            <li>建議瀏覽器：IE10(含)以上</li>
+          </div>
+        </div> -->
+      </div>
+      <div class="copyRight">
+        <div class="fixed-width">
+          <p>Copyright <i class="far fa-copyright"></i> TKB台灣知識庫 All RightsReserved.</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
